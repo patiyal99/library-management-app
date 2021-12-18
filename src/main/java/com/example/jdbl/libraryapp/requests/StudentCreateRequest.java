@@ -20,6 +20,9 @@ public class StudentCreateRequest {
     private String email;
     private String rollNo;
 
+//    private String username; //some unique vector for distinguishing other users
+    private String password;
+
     public Student toStudent(){
         return Student.builder()
                 .name(name)
